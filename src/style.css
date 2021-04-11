@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero {
+    background: url(../images/dog_hero.png) center;
+    background-attachment: fixed;
+}
+
+.testimonial {
+    background: url(../images/testimonial_bg.png) center -30px;
+    background-attachment: fixed;
+}
+
+.testimonialRctg {
+    background-color: rgba(255,255,255,0.6);
+}
+
+.pricesBg {
+    background: url(../images/price_bg.png);
+}
+
+.teamBg {
+    background: url(../images/dog_hero_copy.png) 5px;
+}
+
+body {
+    font-family: "Open Sans", 'sans-serif';
+    color: #474747;
+}
+
+.top:hover {
+    background-color: rgba(32, 32, 32, 1);
+    border-bottom: 1px solid black;
+    border-radius: 15%;
+    color: white;
+    padding: 8px;
+    transition: background-color 0.3s;
+    text-decoration: underline;
+}
+
+input,
+textarea {
+    border: 1px solid #474747;
+}
+
+.lModal {
+    left: 18.5%;
+}
+
+footer {
+    background-color: #2A3034;
+    color: #B4B1B1;
+}
