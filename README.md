@@ -1,7 +1,7 @@
-# WBD6204-Web-Application
+# Pet Services Website
 
-Final project SAE Belgrade 2021. 
+Pet Services website, responsive, made with node.js, tailwindcss and with inclusion of original javascript. All production ready files available in the dist folder.
 
-Pet Services website, responsive, made with node.js, tailwindcss and with inclusion of original javascript.
+Final project, SAE Belgrade. 
 
-William Nonato, april 2021
+William Nonato, April 2021
