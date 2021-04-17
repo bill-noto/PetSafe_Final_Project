@@ -770,10 +770,6 @@ video {
   height: 50%;
 }
 
-.h-2\/5 {
-  height: 40%;
-}
-
 .h-full {
   height: 100%;
 }
@@ -815,10 +811,6 @@ video {
 
 .leading-relaxed {
   line-height: 1.625;
-}
-
-.list-disc {
-  list-style-type: disc;
 }
 
 .m-4 {
@@ -879,11 +871,6 @@ video {
   margin-right: 3rem;
 }
 
-.my-14 {
-  margin-top: 3.5rem;
-  margin-bottom: 3.5rem;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -892,6 +879,10 @@ video {
 .mx-2\.5 {
   margin-left: 0.625rem;
   margin-right: 0.625rem;
+}
+
+.ml-0 {
+  margin-left: 0px;
 }
 
 .mt-1 {
@@ -934,10 +925,6 @@ video {
   margin-top: 1.5rem;
 }
 
-.mr-6 {
-  margin-right: 1.5rem;
-}
-
 .mr-8 {
   margin-right: 2rem;
 }
@@ -956,10 +943,6 @@ video {
 
 .mb-12 {
   margin-bottom: 3rem;
-}
-
-.ml-12 {
-  margin-left: 3rem;
 }
 
 .opacity-0 {
@@ -1042,16 +1025,16 @@ video {
   padding-bottom: 0.25rem;
 }
 
-.pb-3 {
-  padding-bottom: 0.75rem;
-}
-
 .pt-4 {
   padding-top: 1rem;
 }
 
 .pb-4 {
   padding-bottom: 1rem;
+}
+
+.pb-5 {
+  padding-bottom: 1.25rem;
 }
 
 .pb-6 {
@@ -1084,6 +1067,10 @@ video {
 
 .top-1\/3 {
   top: 33.333333%;
+}
+
+.top-1\/4 {
+  top: 25%;
 }
 
 * {
@@ -1140,10 +1127,6 @@ video {
   width: 50%;
 }
 
-.w-3\/4 {
-  width: 75%;
-}
-
 .w-3\/5 {
   width: 60%;
 }
@@ -1158,10 +1141,6 @@ video {
 
 .w-4\/6 {
   width: 66.666667%;
-}
-
-.w-11\/12 {
-  width: 91.666667%;
 }
 
 .w-full {
@@ -1278,13 +1257,13 @@ video {
 }
 
 .hero {
-  background: url(../images/dog_hero.png) center;
-  background-attachment: fixed;
+  background: url(../images/dog_hero.png) center no-repeat;
+  background-size: cover;
 }
 
 .testimonial {
-  background: url(../images/testimonial_bg.png) center -30px;
-  background-attachment: fixed;
+  background: url(../images/testimonial_bg.png) center -30px no-repeat;
+  background-size: cover;
 }
 
 .testimonialRctg {
@@ -1307,11 +1286,10 @@ body {
 .top:hover {
   background-color: rgba(32, 32, 32, 1);
   border-bottom: 1px solid black;
-  border-radius: 15%;
+  border-radius: 10%;
   color: white;
   padding: 8px;
-  transition: background-color 0.3s;
-  text-decoration: underline;
+  transition: background-color 0.5s;
 }
 
 input,
@@ -1357,10 +1335,6 @@ footer {
     justify-content: flex-end;
   }
 
-  .sm\:h-3\/5 {
-    height: 60%;
-  }
-
   .sm\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
@@ -1390,10 +1364,6 @@ footer {
     line-height: 2;
   }
 
-  .sm\:list-none {
-    list-style-type: none;
-  }
-
   .sm\:my-6 {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
@@ -1407,14 +1377,6 @@ footer {
   .sm\:mx-auto {
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .sm\:mr-0 {
-    margin-right: 0px;
-  }
-
-  .sm\:ml-0 {
-    margin-left: 0px;
   }
 
   .sm\:mt-4 {
@@ -1518,10 +1480,6 @@ footer {
     display: none;
   }
 
-  .md\:h-3\/5 {
-    height: 60%;
-  }
-
   .md\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
@@ -1541,8 +1499,20 @@ footer {
     margin-top: 2rem;
   }
 
+  .md\:mr-12 {
+    margin-right: 3rem;
+  }
+
+  .md\:ml-12 {
+    margin-left: 3rem;
+  }
+
   .md\:pt-2 {
     padding-top: 0.5rem;
+  }
+
+  .md\:pl-4 {
+    padding-left: 1rem;
   }
 
   .md\:pl-8 {
@@ -1554,13 +1524,33 @@ footer {
   }
 }
 
-@media (min-width: 720px) and (max-width: 860px) {
+@media (min-width: 720px) and (max-width: 919px) {
+  .lg\:block {
+    display: block;
+  }
+
   .lg\:flex {
     display: flex;
   }
 
   .lg\:hidden {
     display: none;
+  }
+
+  .lg\:mr-12 {
+    margin-right: 3rem;
+  }
+
+  .lg\:ml-12 {
+    margin-left: 3rem;
+  }
+
+  .lg\:pt-2 {
+    padding-top: 0.5rem;
+  }
+
+  .lg\:pl-8 {
+    padding-left: 2rem;
   }
 
   .lg\:pl-12 {
@@ -1570,9 +1560,13 @@ footer {
   .lg\:w-2\/5 {
     width: 40%;
   }
+
+  .lg\:w-3\/5 {
+    width: 60%;
+  }
 }
 
-@media (min-width: 861px) and (max-width: 100vw) {
+@media (min-width: 920px) and (max-width: 100vw) {
   .xl\:flex {
     display: flex;
   }
@@ -1609,6 +1603,11 @@ footer {
     margin-bottom: 3.5rem;
   }
 
+  .xl\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .xl\:mr-10 {
     margin-right: 2.5rem;
   }
@@ -1617,12 +1616,24 @@ footer {
     margin-left: 2.5rem;
   }
 
+  .xl\:pl-16 {
+    padding-left: 4rem;
+  }
+
   .xl\:pl-24 {
     padding-left: 6rem;
   }
 
   .xl\:w-2\/5 {
     width: 40%;
+  }
+
+  .xl\:w-3\/5 {
+    width: 60%;
+  }
+
+  .xl\:w-4\/5 {
+    width: 80%;
   }
 }
 

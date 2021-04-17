@@ -62,13 +62,46 @@ $(window).on('load', function () {
     }, 2000);
 })
 
+//Gallery ...Index
+var boom = $('.here > img');
+$('.gallery').on('click', function (){
+    modal('show');
+    boom.addClass('transition-all transform hover:scale-110 hover:border-black');
+    boom.attr('src', 'images/gallery.png');
+})
+$('.gallery1').on('click', function (){
+    modal('show');
+    boom.addClass('transition-all transform hover:scale-110 hover:border-black');
+    boom.attr('src', 'images/gallery1.png')
+})
+$('.gallery2').on('click', function (){
+    modal('show');
+    boom.addClass('transition-all transform hover:scale-110 hover:border-black');
+    boom.attr('src', 'images/gallery2.png')
+})
+$('.gallery3').on('click', function (){
+    modal('show');
+    boom.addClass('transition-all transform hover:scale-110 hover:border-black');
+    boom.attr('src', 'images/gallery3.png')
+})
+$('.gallery4').on('click', function (){
+    modal('show');
+    boom.addClass('transition-all transform hover:scale-110 hover:border-black');
+    boom.attr('src', 'images/gallery4.png')
+})
+$('.gallery5').on('click', function (){
+    modal('show');
+    boom.addClass('transition-all transform hover:scale-110 hover:border-black');
+    boom.attr('src', 'images/gallery5.png')
+})
+
 //Accordion ...price
 $('dt').on('click', function () {
     $('dd').slideUp();
     $(this).next().slideDown();
 })
 
-//Price calculator, modals & overlays ...price/about/contact
+//Price calculator, modals & overlays ...index/price/about/contact
 function modal(action) {
     if (action === 'show') {
         $('#modal').fadeIn(1000);

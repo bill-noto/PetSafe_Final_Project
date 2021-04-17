@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 .hero {
-    background: url(../images/dog_hero.png) center;
-    background-attachment: fixed;
+    background: url(../images/dog_hero.png) center no-repeat;
+    background-size: cover;
 }
 
 .testimonial {
-    background: url(../images/testimonial_bg.png) center -30px;
-    background-attachment: fixed;
+    background: url(../images/testimonial_bg.png) center -30px no-repeat;
+    background-size: cover;
 }
 
 .testimonialRctg {
@@ -32,11 +32,10 @@ body {
 .top:hover {
     background-color: rgba(32, 32, 32, 1);
     border-bottom: 1px solid black;
-    border-radius: 15%;
+    border-radius: 10%;
     color: white;
     padding: 8px;
-    transition: background-color 0.3s;
-    text-decoration: underline;
+    transition: background-color 0.5s;
 }
 
 input,
